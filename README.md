@@ -70,11 +70,9 @@ database.default.port = 3306
 ### Configure SQLite Database in `.env`
 
 ```env
-# Database Configuration - SQLite
 database.default.DBDriver = SQLite3
 database.default.database = writable/database.sqlite3
 database.default.DBPrefix = 
-database.default.port = 
 ```
 
 ### Run Migrations
