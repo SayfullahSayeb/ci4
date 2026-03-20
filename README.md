@@ -24,20 +24,16 @@ rm -rf tests
 cp env .env
 ```
 
-### Step 3: Install Dependencies
-
-```bash
-# For development
-composer install
-
-# For production (smaller size)
-composer install --no-dev --optimize-autoloader
-```
-
-### Step 4: Run Server (Testing)
+### Step 3: Run Server (Testing) 
 
 ```bash
 php spark serve
+```
+
+### Step 4: For production
+
+```bash
+composer install --no-dev
 ```
 
 ---
