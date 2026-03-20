@@ -24,6 +24,32 @@ rm -rf tests
 mv env .env
 ```
 
+### Configure MySQL Database in `.env`
+
+```env
+database.default.hostname = localhost
+database.default.database = your_database_name    # Change this
+database.default.username = root
+database.default.password =
+database.default.DBDriver = MySQLi
+database.default.port = 3306
+```
+
+### Configure SQLite Database in `.env`
+
+```env
+database.default.database = database.db
+database.default.DBDriver = SQLite3
+```
+
+### Run Migrations
+
+```bash
+php spark migrate --all
+```
+This will automatically create the `writable/database.db` file.
+
+
 ### Step 3: Run Server (Testing) 
 
 ```bash
@@ -51,31 +77,6 @@ composer require codeigniter4/shield
 ```bash
 php spark shield:setup
 ```
-
-### Configure MySQL Database in `.env`
-
-```env
-database.default.hostname = localhost
-database.default.database = your_database_name    # Change this
-database.default.username = root
-database.default.password =
-database.default.DBDriver = MySQLi
-database.default.port = 3306
-```
-
-### Configure SQLite Database in `.env`
-
-```env
-database.default.database = database.db
-database.default.DBDriver = SQLite3
-```
-
-### Run Migrations
-
-```bash
-php spark migrate --all
-```
-This will automatically create the `writable/database.db` file.
 
 ### Create First Super Admin User
 
