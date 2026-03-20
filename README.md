@@ -20,8 +20,8 @@ cd project-root
 # Remove unnecessary tests folder
 rm -rf tests
 
-# Copy environment file
-cp env .env
+# Rename environment file
+mv env .env
 ```
 
 ### Step 3: Run Server (Testing) 
