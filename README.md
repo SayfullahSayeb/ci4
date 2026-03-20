@@ -167,6 +167,7 @@ php spark migrate --all
 ```bash
 php spark shield:user create
 php spark shield:user addgroup your_username superadmin
+php spark shield:user list
 ```
 
 ---
