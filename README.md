@@ -56,7 +56,7 @@ composer require codeigniter4/shield
 php spark shield:setup
 ```
 
-### Configure Database in `.env`
+### Configure MySQL Database in `.env`
 
 ```env
 database.default.hostname = localhost
@@ -67,11 +67,22 @@ database.default.DBDriver = MySQLi
 database.default.port = 3306
 ```
 
+### Configure SQLite Database in `.env`
+
+```env
+# Database Configuration - SQLite
+database.default.DBDriver = SQLite3
+database.default.database = writable/database.sqlite3
+database.default.DBPrefix = 
+database.default.port = 
+```
+
 ### Run Migrations
 
 ```bash
 php spark migrate --all
 ```
+This will automatically create the `writable/database.db` file.
 
 ### Create First Super Admin User
 
