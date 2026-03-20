@@ -64,6 +64,10 @@ database.default.port = 3306
 ```
 
 ### Configure SQLite Database in `.env`
+create database.db first
+```bash
+touch writable/database.db
+```
 
 ```env
 database.default.database = database.db
