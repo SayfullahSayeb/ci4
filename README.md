@@ -30,6 +30,7 @@ git clone https://github.com/yourusername/ci4-master.git my-new-project
 cd my-new-project
 php spark cache:clear
 composer install
+mv env .env                                   # rename environment file
 php spark migrate --all
 php spark shield:user create
 php spark shield:user addgroup your_username superadmin
