@@ -1,8 +1,8 @@
 # CodeIgniter 4 - My Reusable Master Template
 
-This is my personal master template with Shield Auth + SQLite.
+This master template with Shield Auth + SQLite. 
 
-### Setup Commands
+### What I did,
 ```bash
 composer create-project codeigniter4/appstarter project-root
 cd project-root
@@ -19,7 +19,7 @@ database.default.DBDriver = SQLite3
 database.default.database = writable/database.sqlite3
 database.default.DBPrefix = 
 ```
-# Remove `index.php` from URL
+# Removed `index.php` from URL
 Edit `app/Config/App.php` → set `$indexPage = '';`
 Add `.htaccess` in root
 
@@ -46,23 +46,22 @@ Link assets like this:
 
 ### How to Add New Page
 
-1. Add method in `MainController.php`
+1. Add method in `app/Controllers/MainController.php`
 2. Create view file in `app/Views/pages/`
 3. Add route in `app/Config/Routes.php`
 
 ### Development Commands
 ```bash
-php spark serve                    # run local server
-composer install --no-dev          # production build
+composer update                    # Update dependencies
 php spark migrate --all            # run migrations
 php spark cache:clear              # clear cache
+php spark serve                    # run local server
+composer install --no-dev          # production build
 ```
 ### Notes
 
-- This master uses SQLite by default (easy cloning)
-- Shield authentication is ready
-- Use MainController.php for all page logic
-- Keep BaseController.php as it is
-- All custom work should be done in MainController.php and Views/pages/
+- This master uses SQLite by default
+- Shared layout file is located at `app/Views/layout.php`
+- Shield authentication is fully integrated and ready to use
 
 Last Updated: March 2026
