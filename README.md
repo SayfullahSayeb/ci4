@@ -32,10 +32,14 @@ php spark cache:clear
 composer install
 mv env .env                                   # rename environment file
 php spark migrate --all
+php spark serve
+```
+
+### For add user
+```bash
 php spark shield:user create
 php spark shield:user addgroup your_username superadmin
 php spark shield:user list
-php spark serve
 ```
 ### Project Structure & How to Work
 
