@@ -14,7 +14,7 @@ php spark migrate --all                       # run migrations
 Edit .env file and add:
 ```
 database.default.DBDriver = SQLite3
-database.default.database = writable/database.db
+database.default.database = database.db
 database.default.DBPrefix = 
 ```
 ### Removed `index.php` from URL
