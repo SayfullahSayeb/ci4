@@ -10,6 +10,7 @@ composer require codeigniter4/shield          # install shield
 php spark shield:setup                        # shield setup
 rm -rf tests                                  # remove tests folder
 mv env .env                                   # rename environment file
+php spark migrate --all                       # run migrations
 ```
 # Database Setup (SQLite)
 Edit .env file and add:
@@ -17,13 +18,6 @@ Edit .env file and add:
 database.default.DBDriver = SQLite3
 database.default.database = writable/database.sqlite3
 database.default.DBPrefix = 
-```
-```
-php spark migrate --all                       # run migrations
-```
-```
-php spark shield:user create                  # create first user
-php spark shield:user addgroup your_username superadmin   # make user superadmin
 ```
 # Remove `index.php` from URL
 Edit `app/Config/App.php` → set `$indexPage = '';`
