@@ -26,7 +26,7 @@ Add `.htaccess` in root
 
 ### How to Start New Project from Master
 ```bash
-git clone https://github.com/yourusername/ci4-master.git
+git clone https://github.com/SayfullahSayeb/ci4.git
 cd ci4
 php spark cache:clear
 composer install
