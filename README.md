@@ -57,8 +57,8 @@ Link assets like this:
 composer update                    # Update dependencies
 php spark migrate --all            # run migrations
 php spark cache:clear              # clear cache
-php spark serve                    # run local server
 composer install --no-dev          # production build
+php spark serve                    # run local server
 ```
 ### Notes
 
