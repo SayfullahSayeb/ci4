@@ -30,7 +30,7 @@ git clone https://github.com/SayfullahSayeb/ci4.git
 cd ci4
 php spark cache:clear
 composer install
-mv env .env                                   # rename environment file
+cp env .env                                   # copy environment file
 php spark migrate --all
 php spark serve
 ```
