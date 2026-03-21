@@ -34,13 +34,13 @@ php spark serve
 ```
 ### Project Structure & How to Work
 
-All controller logic → `app/Controllers/MainController.php`
-All view files → `app/Views/pages/`
-Shared layout → `app/Views/layout.php`
-Assets (css, js, images) → `public/assets/`
+All controller logic → `app/Controllers/MainController.php` <br>
+All view files → `app/Views/pages/`<br>
+Shared layout → `app/Views/layout.php`<br>
+Assets (css, js, images) → `public/assets/`<br>
 
-Link assets like this:
-`<link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">`
+Link assets like this:<br>
+`<link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">`<br>
 
 ### How to Add New Page
 
