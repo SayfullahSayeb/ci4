@@ -39,19 +39,14 @@ php spark serve
 ```
 ### Project Structure & How to Work
 
-All controller logic → `app/Controllers/MainController.php` <br>
+All controller logic → `app/Controllers/` or `app/Controllers/MainController.php` <br>
 All view files → `app/Views/pages/`<br>
+Add route in `app/Config/Routes.php` <br>
 Shared layout → `app/Views/layout.php`<br>
 Assets (css, js, images) → `public/assets/`<br>
 
 Link assets like this:
 `<link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">`
-
-### How to Add New Page
-
-1. Add method in `app/Controllers/MainController.php`
-2. Create view file in `app/Views/pages/`
-3. Add route in `app/Config/Routes.php`
 
 ### Development Commands
 ```bash
