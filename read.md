@@ -31,6 +31,7 @@ composer install
 php spark migrate --all
 php spark shield:user create
 php spark shield:user addgroup your_username superadmin
+php spark shield:user list
 php spark serve
 ```
 ### Project Structure & How to Work
