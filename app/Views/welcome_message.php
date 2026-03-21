@@ -220,6 +220,12 @@
             <li class="menu-item hidden"><a
                     href="https://codeigniter.com/contribute" target="_blank">Contribute</a>
             </li>
+            <?php if (auth()->loggedIn()): ?>
+                <li class="menu-item hidden"><a href="<?= url_to('logout') ?>">Logout</a></li>
+            <?php else: ?>
+                <li class="menu-item hidden"><a href="<?= url_to('login') ?>">Login</a></li>
+                <li class="menu-item hidden"><a href="<?= url_to('register') ?>">Register</a></li>
+            <?php endif; ?>
         </ul>
     </div>
 
