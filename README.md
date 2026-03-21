@@ -1,6 +1,4 @@
-# CodeIgniter 4 - My Reusable Master Template
-
-This master template with Shield Auth + SQLite. 
+# CodeIgniter 4 with Shield Auth + SQLite.
 
 ### What I did,
 ```bash
