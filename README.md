@@ -4,10 +4,10 @@
 ```bash
 composer create-project codeigniter4/appstarter project-root
 cd project-root
+mv env .env                                   # rename environment file
 composer require codeigniter4/shield          # install shield
 php spark shield:setup                        # shield setup
 rm -rf tests                                  # remove tests folder
-mv env .env                                   # rename environment file
 php spark migrate --all                       # run migrations
 ```
 ### Database Setup (SQLite)
