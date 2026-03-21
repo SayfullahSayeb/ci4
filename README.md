@@ -26,8 +26,8 @@ Add `.htaccess` in root
 
 ### How to Start New Project from Master
 ```bash
-git clone https://github.com/yourusername/ci4-master.git my-new-project
-cd my-new-project
+git clone https://github.com/yourusername/ci4-master.git
+cd ci4
 php spark cache:clear
 composer install
 mv env .env                                   # rename environment file
