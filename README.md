@@ -25,6 +25,7 @@ Add `.htaccess` in root
 ```bash
 git clone https://github.com/yourusername/ci4-master.git my-new-project
 cd my-new-project
+php spark cache:clear
 composer install
 php spark migrate --all
 php spark shield:user create
