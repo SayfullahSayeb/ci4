@@ -39,8 +39,8 @@ All view files → `app/Views/pages/`<br>
 Shared layout → `app/Views/layout.php`<br>
 Assets (css, js, images) → `public/assets/`<br>
 
-Link assets like this:<br>
-`<link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">`<br>
+Link assets like this:
+`<link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">`
 
 ### How to Add New Page
 
