@@ -8,7 +8,6 @@ mv env .env                                   # rename environment file
 composer require codeigniter4/shield          # install shield
 php spark shield:setup                        # shield setup
 rm -rf tests                                  # remove tests folder
-php spark migrate --all                       # run migrations
 ```
 ### Database Setup (SQLite)
 Edit .env file and add:
@@ -16,6 +15,10 @@ Edit .env file and add:
 database.default.DBDriver = SQLite3
 database.default.database = database.db
 database.default.DBPrefix = 
+```
+for sync
+```bash
+php spark migrate --all                       # run migrations
 ```
 ### Removed `index.php` from URL
 Edit `app/Config/App.php` → set `$indexPage = '';`
